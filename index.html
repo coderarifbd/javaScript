@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>learn javaScript</title>
+</head>
+<body>
+	<h1>learn javaScript</h1>
+	<p>few more thing going to learn</p>
+	<h1>Another heading tag</h1>
+	
+	
+	<script>
+		var h1 = document.querySelector("h1")
+		var isBlue = false
+		
+		setInterval(function () {
+		    if (isBlue){
+		        h1.innerText = "is not blue"
+				h1.style.color = "black"
+			}else {
+		        h1.innerText = "now blue"
+				h1.style.color = "blue"
+			}
+		    isBlue = !isBlue
+        }, 1000)
+		
+		
+	</script>
+</body>
+</html>
